@@ -1,36 +1,23 @@
 import '../styles/App.css';
-import { getPokemonData } from '../scripts/pokedata';
+
+import { usePokemonData } from '../hooks/usePokemonData';
 
 import Loading from './Loading.js';
 import Navigation from './Navigation.js';
 import Cards from './Cards.js';
 import Error from './Error.js';
 
-import { useState, useEffect } from 'react';
-import { getFakeData } from '../scripts/utils';
+import { useState } from 'react';
 
 function App() {
-  const fakeData = getFakeData();
-
-  const [condition, setCondition] = useState('active');
-
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
-  const [data, setData] = useState(fakeData);
 
-  // useEffect(() => {
-  //   getPokemonData().then((pokeData) => {
-  //     console.log(pokeData);
-  //     if (pokeData.error) setCondition('error');
-  //     else setCondition('active');
-
-  //     setData(pokeData);
-  //   });
-  // }, []);
+  const [condition, errorData, data] = usePokemonData();
 
   return (
-    <div className="App">
-      <Navigation score={score} bestScore={bestScore} />
+    <div className={`app app-${condition}`}>
+      <Navigation theme={condition} score={score} bestScore={bestScore} />
       {condition === 'loading' && <Loading />}
       {condition === 'active' && (
         <Cards
@@ -41,7 +28,7 @@ function App() {
           setBestScore={setBestScore}
         />
       )}
-      {condition === 'error' && <Error data={data} />}
+      {condition === 'error' && <Error data={errorData} />}
     </div>
   );
 }

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: pokemonsolid;
+  src: url('../fonts/PokemonSolid.ttf');
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+}
+.title-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 90px;
+  color: white;
+}
+
+.scoreboard {
+  display: flex;
+  width: 300px;
+  height: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.score-text {
+  font-family: 'VT323', monospace;
+  color: white;
+}
+
+.title {
+  font-family: pokemonsolid, cursive;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 32px;
+  }
+  .title-holder {
+    width: 200px;
+  }
+  .scoreboard {
+    width: 200px;
+  }
+}

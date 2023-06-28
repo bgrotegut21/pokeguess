@@ -1,0 +1,15 @@
+.app {
+  height: 100vh;
+}
+
+.app-active {
+  background-color: rgb(186, 72, 73);
+}
+
+.app-loading {
+  background-color: rgb(56, 132, 138);
+}
+
+.app-error {
+  background-color: rgb(111, 5, 5);
+}

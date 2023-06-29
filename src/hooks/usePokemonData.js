@@ -38,5 +38,3 @@ const usePokemonData = () => {
 };
 
 export { usePokemonData };
-
-//

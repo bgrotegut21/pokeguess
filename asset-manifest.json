@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.00b109e5.css",
-    "main.js": "/static/js/main.9b96d491.js",
-    "static/js/787.ee4514af.chunk.js": "/static/js/787.ee4514af.chunk.js",
-    "static/media/PokemonSolid.ttf": "/static/media/PokemonSolid.5d60be1f7ff5fcc21fc1.ttf",
-    "index.html": "/index.html",
-    "main.00b109e5.css.map": "/static/css/main.00b109e5.css.map",
-    "main.9b96d491.js.map": "/static/js/main.9b96d491.js.map",
-    "787.ee4514af.chunk.js.map": "/static/js/787.ee4514af.chunk.js.map"
+    "main.css": "/pokeguess/static/css/main.697640d3.css",
+    "main.js": "/pokeguess/static/js/main.e1d9d26c.js",
+    "static/js/787.ee4514af.chunk.js": "/pokeguess/static/js/787.ee4514af.chunk.js",
+    "static/media/PokemonSolid.ttf": "/pokeguess/static/media/PokemonSolid.5d60be1f7ff5fcc21fc1.ttf",
+    "index.html": "/pokeguess/index.html",
+    "main.697640d3.css.map": "/pokeguess/static/css/main.697640d3.css.map",
+    "main.e1d9d26c.js.map": "/pokeguess/static/js/main.e1d9d26c.js.map",
+    "787.ee4514af.chunk.js.map": "/pokeguess/static/js/787.ee4514af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00b109e5.css",
-    "static/js/main.9b96d491.js"
+    "static/css/main.697640d3.css",
+    "static/js/main.e1d9d26c.js"
   ]
 }

@@ -39,7 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://bgrotegut21.github.io/pokeguess",
+  "homepage": "http://bgrotegut21.github.io/pokeguess",
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
